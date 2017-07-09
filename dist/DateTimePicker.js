@@ -71,10 +71,13 @@ $.DateTimePicker = $.DateTimePicker || {
 		roundOffSeconds: true,
 	
 		showHeader: true,
+		showFooter: false,
 		titleContentDate: "Set Date",
 		titleContentTime: "Set Time",
 		titleContentDateTime: "Set Date & Time",
-	
+		
+		footerContent: null,
+
 		buttonsToDisplay: ["HeaderCloseButton", "SetButton", "ClearButton"],
 		setButtonContent: "Set",
 		clearButtonContent: "Clear",
@@ -1457,6 +1460,14 @@ $.cf = {
 				sHeader += "<div class='dtpicker-value'></div>";
 				sHeader += "</div>";
 			}
+
+			var sFooter = "";
+			if(oDTP.settings.showFooter)
+			{
+				sFooter += "<div class='dtpicker-footer'>";
+				sFooter += "<div>"+oDTP.settings.footerContent+"</div>";
+				sFooter += "</div>";
+			}
 		
 			//--------------------------------------------------------------------
 		
@@ -1501,7 +1512,7 @@ $.cf = {
 		
 			//--------------------------------------------------------------------
 		
-			var sTempStr = sHeader + sDTPickerComp + sDTPickerButtons;
+			var sTempStr = sHeader + sDTPickerComp + sDTPickerButtons + sFooter;
 		
 			$(oDTP.element).find(".dtpicker-subcontent").html(sTempStr);
 		
@@ -3004,4 +3015,3 @@ $.cf = {
 	};
 	
 }));
-

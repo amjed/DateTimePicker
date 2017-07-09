@@ -66,8 +66,8 @@ module.exports = function(grunt)
 			{
 				files:
 				{
-					'dist/<%= pkg.name %>.min.js': ['src/<%= pkg.name %>.js'],
-					'dist/<%= pkg.name %>-ltie9.min.js': ['src/<%= pkg.name %>-ltie9.js']
+					'dist/DateTimePicker.min.js': ['src/DateTimePicker.js'],
+					'dist/DateTimePicker-ltie9.min.js': ['src/DateTimePicker-ltie9.js']
 				}
 			}
 		},
@@ -82,8 +82,8 @@ module.exports = function(grunt)
 			{
 				files:
 				{
-					'dist/<%= pkg.name %>.min.css': ['src/<%= pkg.name %>.css'],
-					'dist/<%= pkg.name %>-ltie9.min.css': ['src/<%= pkg.name %>-ltie9.css']
+					'dist/DateTimePicker.min.css': ['src/DateTimePicker.css'],
+					'dist/DateTimePicker-ltie9.min.css': ['src/DateTimePicker-ltie9.css']
 				}
 			}
 		},

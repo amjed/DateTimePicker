@@ -133,6 +133,12 @@
 	font-size: 1.4em;
 }
 
+.dtpicker-footer
+{
+	font-size: 1em;
+	margin: 0.2em 1em;
+}
+
 .dtpicker-components
 {
 	overflow: hidden;
