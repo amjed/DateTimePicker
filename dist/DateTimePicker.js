@@ -1585,7 +1585,7 @@ $.cf = {
 				{
 					keyCode = parseInt(e.keyCode ? e.keyCode : e.which);
 					// console.log("keydown " + keyCode);
-					if(! $(".dtpicker-compValue").is(":focus") && keyCode !== 9)
+					if(! $(".dtpicker-compValue").is(":focus") && keyCode > -1 && keyCode !== 9)
 					{
 						//if(keyCode !== 37 && keyCode !== 39)
 							oDTP._hidePicker("");
